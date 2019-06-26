@@ -65,10 +65,26 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
 console.log(`Car 33 is a *car year goes here* *car make goes here* *car model goes here*` );
 
+for(let i = 0; inventory.length - 1; i++)
+{
+    if(inventory.id === 33)
+    {
+        return inventory.id[i] + inventory.car_make[i] + inventory.car_model[i];
+    }
+
+    
+}
+
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
 let lastCar = 0;
 console.log();
+
+// This code probably isn't quite right, but the idea is that one I know how to access the indexes of the particular arrays, and have the total
+// length passed all I will then need to do is to find out how you find the max size of the of array.
+
+console.log(inventory.car_make[length -1]);
+console.log(inventory.car_model[length - 1]);
 
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
