@@ -118,8 +118,8 @@ for(let i = 0; i < inventory.length; i++)
 {
     if(inventory[i].car_make === "BMW" || inventory[i].car_make === "Audi")
     {
-        BMWAndAudi+=inventory[i] + " ";
+        BMWAndAudi+=inventory[i].id + " " + inventory[i].car_make + " " + inventory[i].car_model + " " + inventory[i].car_year;
     }
 }
 
-console.log(JSON.stringify(BMWAndAudi));
+console.log(JSON.stringify(BMWAndAudi)); 
